@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <button onclick="backgroundClick()">
+      test
+    </button>
+    <script>
+
+    function backgroundClick() {
+      $('.circle_point').css('background-color', 'black')
+    }
+
+      function makemelder() {
+
+        const rows = 62;
+        const columns = 62;
+        const delayPer = 0.01;
+        const el = $('#rookmelder')
+        let delay
+        for (let i = 0; i < rows; i++) {
+          for (let j = 0; j < columns; j++) {
+            result += `<div class="circle_point"></div>`
+          }
+        }
+        function backgroundClick() {
+
+        }
+        $('#rookmelder').append(result)
+      }
+    </script>
+    <div id="rookmelder" onClick="makemelder()" class="circle">
+    </div>
+    <!-- <div class="main_img">
+      <div class="main_img_text">
+        <div class="main_img_title">
+          Beceause your safety matters
+        </div>
+        <div class="main_img_subtitle">
+          rookmeldervergelijken.nl
+        </div>
+      </div>
+      <div class="main_img_description">
+        Vanaf maar 2019
+      </div>
+    </div> -->
+  </body>
+</html>
