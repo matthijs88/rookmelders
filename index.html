@@ -1,39 +1,65 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/evb2bea.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <button onclick="backgroundClick()">
-      test
-    </button>
-    <script>
-
-    function backgroundClick() {
-      $('.circle_point').css('background-color', 'black')
-    }
-
-      function makemelder() {
-
-        const rows = 62;
-        const columns = 62;
-        const delayPer = 0.01;
-        const el = $('#rookmelder')
-        let delay
-        for (let i = 0; i < rows; i++) {
-          for (let j = 0; j < columns; j++) {
-            result += `<div class="circle_point"></div>`
-          }
-        }
-        function backgroundClick() {
-
-        }
-        $('#rookmelder').append(result)
-      }
-    </script>
-    <div id="rookmelder" onClick="makemelder()" class="circle">
+    <div class="menu_bar">
+      <img class="logo" src="img/logo.png">
+      <ul class="menu_list">
+        <li><a href="/">Top 10</a></li>
+        <li><a href="/">Merken</a></li>
+        <li><a href="/">Slimme Rookmelders</a></li>
+        <li><a href="/">Bestellen</a></li>
+      </ul>
     </div>
-    <!-- <div class="main_img">
+
+    <div class="first_bar">
+      <div class="column_50">
+        <h1>Vergelijk Rookmelders</h1>
+        <h2>Omdat jouw veiligheid het belangrijkst is</h2>
+        <a class="main_cta" href="#">Vind de beste rookmelder</a>
+      </div>
+      <div class="column_50">
+        <img class="rookmelder_img" src="img/rookmelder.png"/>
+      </div>
+      <img class="bg_circle_right" src="img/oval-bg.png"/>
+      </div>
+     <!-- 
+      <button onclick="backgroundClick()">
+        test
+      </button>
+      <script>
+
+      function backgroundClick() {
+        $('.circle_point').css('background-color', 'black')
+      }
+
+        function makemelder() {
+
+          const rows = 62;
+          const columns = 62;
+          const delayPer = 0.01;
+          const el = $('#rookmelder')
+          let delay
+          let result = ''
+          for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < columns; j++) {
+              result += `<div class="circle_point"></div>`
+            }
+          }
+          function backgroundClick() {
+
+          }
+          $('#rookmelder').append(result)
+        }
+      </script> 
+      <div id="rookmelder" onClick="makemelder()" class="circle">
+      </div>
+    -->
+
+    <div class="main_header">
       <div class="main_img_text">
         <div class="main_img_title">
           Beceause your safety matters
@@ -45,6 +71,6 @@
       <div class="main_img_description">
         Vanaf maar 2019
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
